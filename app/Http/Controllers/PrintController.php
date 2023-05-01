@@ -11,9 +11,9 @@ class PrintController extends Controller
 
         // Set params
         $mid = '123123456';
-        $store_name = 'YOURMART';
-        $store_address = 'Mart Address';
-        $store_phone = '1234567890';
+        $store_name = 'Likuli Store';
+        $store_address = 'Jl Wukir Gg Pande - Temas';
+        $store_phone = '082143531190';
         $store_email = 'yourmart@email.com';
         $store_website = 'yourmart.com';
         $tax_percentage = 0;
@@ -66,8 +66,9 @@ class PrintController extends Controller
                 $item['price']
             );
         }
+        
         // Set tax
-        $printer->setTax($tax_percentage);
+        // $printer->setTax($tax_percentage);
 
         // Calculate total
         $printer->calculateSubTotal();
